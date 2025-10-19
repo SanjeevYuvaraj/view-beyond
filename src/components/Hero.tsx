@@ -37,12 +37,12 @@ export const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <Button variant="hero" size="lg" className="w-full sm:w-auto">
+            <Button variant="hero" size="lg" className="w-full sm:w-auto" onClick={() => window.location.href = "/auth"}>
               <Play className="h-5 w-5" />
               Start Watching Free
             </Button>
-            <Button variant="outline" size="lg" className="w-full sm:w-auto">
-              Learn More
+            <Button variant="outline" size="lg" className="w-full sm:w-auto" onClick={() => window.location.href = "/upload"}>
+              Upload Content
             </Button>
           </div>
 
